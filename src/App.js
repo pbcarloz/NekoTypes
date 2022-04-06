@@ -1,61 +1,38 @@
-import { Component } from 'react';
+import { useState, useEffect } from 'react';
+
 import Cardlist from './components/card-list/card-list.component';
 import SearchBox from './components/search-box/search-box.component';
 import './App.css';
 
 
-class App extends Component {
+const App = () => {
 
-  constructor () {
-    super();
+  console.log('render');
 
-    this.state = {
-      cats: [],
-      searchField: ''
-    };
-    console.log('constructor');
-  }
+  const [searchField, setSearchField] = useState('');  //[value, setValue]//
+  const [cats, setCats] = useState([]);
 
-  componentDidMount() {
-    console.log('componentDidMount');
+  useEffect(() => {
     fetch('https://jsonplaceholder.typicode.com/users')
-      .then((response) => response.json())
-      .then((users) => 
-        this.setState(
-          () => {
-          return { cats: users };
-          }, 
-          () => {
-          console.log(this.state)
-          }
-        )
-      );
+    .then((response) => response.json())
+    .then((users) => setCats(users));
+  }, []);
+
+  //EventValue
+  const onSearchChange = (event) => {
+      const searchFieldString = event.target.value.toLocaleLowerCase();
+      setSearchField(searchFieldString);
   }
 
-  // to avoid annonimous functions
-  onSearchChange = (event) => {
-    const searchField = event.target.value.toLocaleLowerCase();
-    this.setState(() => {
-      return { searchField };
-    });
-    
-  }
+  // create the new array
+  const filteredCat = cats.filter((cat) => {
+    return cat.name.toLocaleLowerCase().includes(searchField);
+  });
 
-  render () {
-    console.log('render');
-
-// destructuring 
-    const { cats, searchField } = this.state;
-    const { onSearchChange } = this;
-
-// create the new array
-    const filteredCat = cats.filter((cat) => {
-      return cat.name.toLocaleLowerCase().includes(searchField);
-    });
-    
-    return (
-      <div className="App">
+  return(
+    <div className="App">
         <h1 className='app-title'>Neko Directory</h1>
+
         <SearchBox 
           onChangeHandler = { onSearchChange } 
           placeholder='Search Friends' 
@@ -63,9 +40,8 @@ class App extends Component {
         />
         <Cardlist cats = { filteredCat } />
       </div>
-    );
-  }
-}
+  );
+};
 
 
 export default App;
