@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/pbcarloz/NekoTypes/static/css/main.f86d6a7a.css",
-    "main.js": "/pbcarloz/NekoTypes/static/js/main.37655ce0.js",
-    "static/js/787.541aa371.chunk.js": "/pbcarloz/NekoTypes/static/js/787.541aa371.chunk.js",
-    "index.html": "/pbcarloz/NekoTypes/index.html",
-    "main.f86d6a7a.css.map": "/pbcarloz/NekoTypes/static/css/main.f86d6a7a.css.map",
-    "main.37655ce0.js.map": "/pbcarloz/NekoTypes/static/js/main.37655ce0.js.map",
-    "787.541aa371.chunk.js.map": "/pbcarloz/NekoTypes/static/js/787.541aa371.chunk.js.map"
+    "main.css": "/pbcarloz/NekoTypes/index.html/static/css/main.f86d6a7a.css",
+    "main.js": "/pbcarloz/NekoTypes/index.html/static/js/main.2be337a0.js",
+    "static/js/787.541aa371.chunk.js": "/pbcarloz/NekoTypes/index.html/static/js/787.541aa371.chunk.js",
+    "index.html": "/pbcarloz/NekoTypes/index.html/index.html",
+    "main.f86d6a7a.css.map": "/pbcarloz/NekoTypes/index.html/static/css/main.f86d6a7a.css.map",
+    "main.2be337a0.js.map": "/pbcarloz/NekoTypes/index.html/static/js/main.2be337a0.js.map",
+    "787.541aa371.chunk.js.map": "/pbcarloz/NekoTypes/index.html/static/js/787.541aa371.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f86d6a7a.css",
-    "static/js/main.37655ce0.js"
+    "static/js/main.2be337a0.js"
   ]
 }
