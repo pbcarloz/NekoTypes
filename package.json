@@ -1,6 +1,6 @@
 {
-  "homepage": "https://github.com/pbcarloz/NekoTypes",
-  "name": "NekoTypes",
+  "homepage": "https://github.com/pbcarloz/NekoTypes/index.html",
+  "name": "nekotypes",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
