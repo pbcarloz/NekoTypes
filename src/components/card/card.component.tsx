@@ -1,7 +1,11 @@
-
+import { Neko } from '../../App';
 import './card-list.styles.css'
 
-const Card = ({ cat }) => {
+type CardProps = {
+    cat: Neko;
+}
+
+const Card = ({ cat }: CardProps) => {
     const { name, id, email } = cat;
     return (
         <div className='card-container' key={id}>

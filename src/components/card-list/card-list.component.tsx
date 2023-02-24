@@ -1,9 +1,15 @@
 
 import './card.styles.css'
 import Card from '../card/card.component';
+import { Neko } from '../../App';
 
-const Cardlist = ({ cats }) => (
 
+
+type CatsProps = {
+    cats: Neko[];
+}
+
+const Cardlist = ({ cats }: CatsProps) => (
     <div className='card-list'>
         {cats.map((cats) => {
             return (

@@ -1,7 +1,6 @@
 # Getting Started with Create React App
 
-This is a quick Application i made with React Functional components to show the rendering.
+This the update from a previous app y made.
 
-https://pbcarloz.github.io/Cat-Directory/
 
 
