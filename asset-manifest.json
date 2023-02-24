@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/pbcarloz/NekoTypes/static/css/main.508eb346.css",
+    "main.js": "/pbcarloz/NekoTypes/static/js/main.df688462.js",
+    "static/js/787.ffc89114.chunk.js": "/pbcarloz/NekoTypes/static/js/787.ffc89114.chunk.js",
+    "index.html": "/pbcarloz/NekoTypes/index.html",
+    "main.508eb346.css.map": "/pbcarloz/NekoTypes/static/css/main.508eb346.css.map",
+    "main.df688462.js.map": "/pbcarloz/NekoTypes/static/js/main.df688462.js.map",
+    "787.ffc89114.chunk.js.map": "/pbcarloz/NekoTypes/static/js/787.ffc89114.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.508eb346.css",
+    "static/js/main.df688462.js"
+  ]
+}
