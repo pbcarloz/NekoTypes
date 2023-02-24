@@ -13,7 +13,7 @@ const Cardlist = ({ cats }: CatsProps) => (
     <div className='card-list'>
         {cats.map((cats) => {
             return (
-                <Card cat={cats} />
+                <Card cat={cats} key={cats.id} />
             );
         })}
     </div>
