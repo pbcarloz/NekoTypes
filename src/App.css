@@ -14,3 +14,9 @@ body {
   font-family: cursive;
   font-size: 66px;
 }
+
+.app-sub-title {
+  color: rgb(255, 0, 234);
+  font-family: cursive;
+  font-size: 33px;
+}

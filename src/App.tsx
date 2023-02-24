@@ -45,8 +45,8 @@ const App = () => {
 
   return (
     <div className="App">
-      <h1 className='app-title'>Neko Directory</h1>
-
+      <h1 className='app-title'>Neko Types</h1>
+      <h3 className='app-sub-title'>Start Typing Friends</h3>
       <SearchBox
         onChangeHandler={onSearchChange}
         placeholder='Search Friends'
